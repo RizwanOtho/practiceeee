@@ -1,0 +1,21 @@
+
+var rizwan =document.getElementById("d");
+var r = document.createElement("input");
+r.setAttribute("id", "input");
+r.setAttribute("onFocus", "this.style.backgroundColor='red';");
+r.setAttribute("onBlur", "this.style.backgroundColor='white';");
+var p = document.createElement("p");
+p.setAttribute("id", "paragraph");
+var b = document.createElement("button");
+b.setAttribute("id", "button");
+b.setAttribute("onClick", "rizwan()");
+var text = document.createTextNode("click now")
+rizwan.appendChild(r);
+rizwan.appendChild(b);
+rizwan.appendChild(p);
+b.appendChild(text);
+
+function touch() {
+ var data = document.getElementById("input").value;
+ document.getElementById("paragraph").innerHTML= data;
+}
